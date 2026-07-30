@@ -1,0 +1,288 @@
+
+
+################ N=38 (unscreened) (merged_cells.csv) ################
+rows=411  participants=38
+base fit: OR=1.717547045  scaled_grad=6.458889e-04  msgs=1  opt_code=0  singular=FALSE
+   base msg: Model failed to converge with max|grad| = 0.00803365 (tol = 0.002, component 1)
+
+--- allFit ---
+attempted (length of allFit object) = 5
+optimizer names:  bobyqa, Nelder_Mead, nlminbwrap, nloptwrap.NLOPT_LN_NELDERMEAD, nloptwrap.NLOPT_LN_BOBYQA 
+returned a fit object (is merMod)   = 5
+
+[bobyqa] returned=TRUE  n_msgs=0  OR=1.717921482  logLik=-219.188275807  scaled_grad=2.829513e-06  opt_code=0  singular=FALSE
+
+[Nelder_Mead] returned=TRUE  n_msgs=1  OR=1.717676884  logLik=-219.188306582  scaled_grad=1.544056e-03  opt_code=0  singular=FALSE
+   msg[1]: Model failed to converge with max|grad| = 0.00755569 (tol = 0.002, component 1)
+
+[nlminbwrap] returned=TRUE  n_msgs=0  OR=1.717949333  logLik=-219.188275831  scaled_grad=1.727875e-05  opt_code=0  singular=FALSE
+
+[nloptwrap.NLOPT_LN_NELDERMEAD] returned=TRUE  n_msgs=0  OR=1.717956388  logLik=-219.188276481  scaled_grad=6.154418e-05  opt_code=0  singular=FALSE
+
+[nloptwrap.NLOPT_LN_BOBYQA] returned=TRUE  n_msgs=1  OR=1.718213514  logLik=-219.188309130  scaled_grad=2.904523e-03  opt_code=0  singular=FALSE
+   msg[1]: Model failed to converge with max|grad| = 0.0103324 (tol = 0.002, component 1)
+
+--- summary(allFit) internals ---
+which.OK:  bobyqa=TRUE  Nelder_Mead=TRUE  nlminbwrap=TRUE  nloptwrap.NLOPT_LN_NELDERMEAD=TRUE  nloptwrap.NLOPT_LN_BOBYQA=TRUE 
+sum(which.OK) =  5 
+msgs element (summary(af)$msgs):
+$bobyqa
+NULL
+
+$Nelder_Mead
+[1] "Model failed to converge with max|grad| = 0.00755569 (tol = 0.002, component 1)"
+
+$nlminbwrap
+NULL
+
+$nloptwrap.NLOPT_LN_NELDERMEAD
+NULL
+
+$nloptwrap.NLOPT_LN_BOBYQA
+[1] "Model failed to converge with max|grad| = 0.0103324 (tol = 0.002, component 1)"
+
+
+--- HEADLINE NUMBERS ---
+attempted                      : 5
+returned a fit                 : 5
+returned AND zero conv messages: 3
+OR range over ALL returned fits    : 0.000536631  (min=1.717676884 max=1.718213514)
+logLik range over ALL returned fits: 0.000033323
+OR range over MESSAGE-FREE fits    : 0.000034907  (min=1.717921482 max=1.717956388)
+logLik range over MESSAGE-FREE fits: 0.000000674
+
+--- per-optimizer table ---
+                       optimizer returned_fit n_msgs          OR         logLik
+                          <char>       <lgcl>  <int>      <char>         <char>
+1:                        bobyqa         TRUE      0 1.717921482 -219.188275807
+2:                   Nelder_Mead         TRUE      1 1.717676884 -219.188306582
+3:                    nlminbwrap         TRUE      0 1.717949333 -219.188275831
+4: nloptwrap.NLOPT_LN_NELDERMEAD         TRUE      0 1.717956388 -219.188276481
+5:     nloptwrap.NLOPT_LN_BOBYQA         TRUE      1 1.718213514 -219.188309130
+   scaled_grad opt_code
+        <char>   <char>
+1:   2.830e-06        0
+2:   1.544e-03        0
+3:   1.728e-05        0
+4:   6.154e-05        0
+5:   2.905e-03        0
+
+--- full message text per optimizer ---
+bobyqa                           | <none>
+Nelder_Mead                      | Model failed to converge with max|grad| = 0.00755569 (tol = 0.002, component 1)
+nlminbwrap                       | <none>
+nloptwrap.NLOPT_LN_NELDERMEAD    | <none>
+nloptwrap.NLOPT_LN_BOBYQA        | Model failed to converge with max|grad| = 0.0103324 (tol = 0.002, component 1)
+Warning message:
+In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  Model failed to converge with max|grad| = 0.00803365 (tol = 0.002, component 1)
+
+
+################ N=36 (screened) (merged_cells_screened.csv) ################
+rows=387  participants=36
+base fit: OR=1.682722616  scaled_grad=1.053100e-04  msgs=0  opt_code=0  singular=FALSE
+
+--- allFit ---
+attempted (length of allFit object) = 5
+optimizer names:  bobyqa, Nelder_Mead, nlminbwrap, nloptwrap.NLOPT_LN_NELDERMEAD, nloptwrap.NLOPT_LN_BOBYQA 
+returned a fit object (is merMod)   = 5
+
+[bobyqa] returned=TRUE  n_msgs=0  OR=1.682567195  logLik=-204.330772018  scaled_grad=1.024765e-05  opt_code=0  singular=FALSE
+
+[Nelder_Mead] returned=TRUE  n_msgs=0  OR=1.682841085  logLik=-204.330772271  scaled_grad=2.323916e-04  opt_code=0  singular=FALSE
+
+[nlminbwrap] returned=TRUE  n_msgs=0  OR=1.682577716  logLik=-204.330772031  scaled_grad=2.346124e-05  opt_code=0  singular=FALSE
+
+[nloptwrap.NLOPT_LN_NELDERMEAD] returned=TRUE  n_msgs=0  OR=1.682624339  logLik=-204.330773009  scaled_grad=6.814552e-05  opt_code=0  singular=FALSE
+
+[nloptwrap.NLOPT_LN_BOBYQA] returned=TRUE  n_msgs=1  OR=1.683000110  logLik=-204.330795676  scaled_grad=2.030146e-03  opt_code=0  singular=FALSE
+   msg[1]: Model failed to converge with max|grad| = 0.00748029 (tol = 0.002, component 1)
+
+--- summary(allFit) internals ---
+which.OK:  bobyqa=TRUE  Nelder_Mead=TRUE  nlminbwrap=TRUE  nloptwrap.NLOPT_LN_NELDERMEAD=TRUE  nloptwrap.NLOPT_LN_BOBYQA=TRUE 
+sum(which.OK) =  5 
+msgs element (summary(af)$msgs):
+$bobyqa
+NULL
+
+$Nelder_Mead
+NULL
+
+$nlminbwrap
+NULL
+
+$nloptwrap.NLOPT_LN_NELDERMEAD
+NULL
+
+$nloptwrap.NLOPT_LN_BOBYQA
+[1] "Model failed to converge with max|grad| = 0.00748029 (tol = 0.002, component 1)"
+
+
+--- HEADLINE NUMBERS ---
+attempted                      : 5
+returned a fit                 : 5
+returned AND zero conv messages: 4
+OR range over ALL returned fits    : 0.000432914  (min=1.682567195 max=1.683000110)
+logLik range over ALL returned fits: 0.000023658
+OR range over MESSAGE-FREE fits    : 0.000273890  (min=1.682567195 max=1.682841085)
+logLik range over MESSAGE-FREE fits: 0.000000991
+
+--- per-optimizer table ---
+                       optimizer returned_fit n_msgs          OR         logLik
+                          <char>       <lgcl>  <int>      <char>         <char>
+1:                        bobyqa         TRUE      0 1.682567195 -204.330772018
+2:                   Nelder_Mead         TRUE      0 1.682841085 -204.330772271
+3:                    nlminbwrap         TRUE      0 1.682577716 -204.330772031
+4: nloptwrap.NLOPT_LN_NELDERMEAD         TRUE      0 1.682624339 -204.330773009
+5:     nloptwrap.NLOPT_LN_BOBYQA         TRUE      1 1.683000110 -204.330795676
+   scaled_grad opt_code
+        <char>   <char>
+1:   1.025e-05        0
+2:   2.324e-04        0
+3:   2.346e-05        0
+4:   6.815e-05        0
+5:   2.030e-03        0
+
+--- full message text per optimizer ---
+bobyqa                           | <none>
+Nelder_Mead                      | <none>
+nlminbwrap                       | <none>
+nloptwrap.NLOPT_LN_NELDERMEAD    | <none>
+nloptwrap.NLOPT_LN_BOBYQA        | Model failed to converge with max|grad| = 0.00748029 (tol = 0.002, component 1)
+
+
+################ TASK 3: subsample 34/36, 40 draws, seed 20260728 ################
+N participants in screened set = 36
+There were 25 warnings (use warnings() to see them)
+     draw n_msgs      grad lme4_pass newton_pass   opt0
+    <int>  <int>    <char>    <lgcl>      <lgcl> <lgcl>
+ 1:     1      0 2.627e-04      TRUE        TRUE   TRUE
+ 2:     2      1 5.359e-04     FALSE        TRUE   TRUE
+ 3:     3      0 7.121e-05      TRUE        TRUE   TRUE
+ 4:     4      1 7.742e-04     FALSE        TRUE   TRUE
+ 5:     5      1 4.464e-04     FALSE        TRUE   TRUE
+ 6:     6      1 1.952e-03     FALSE        TRUE   TRUE
+ 7:     7      1 9.163e-04     FALSE        TRUE   TRUE
+ 8:     8      1 7.014e-04     FALSE        TRUE   TRUE
+ 9:     9      1 8.250e-04     FALSE        TRUE   TRUE
+10:    10      0 9.532e-04      TRUE        TRUE   TRUE
+11:    11      1 1.412e-03     FALSE        TRUE   TRUE
+12:    12      1 1.922e-03     FALSE        TRUE   TRUE
+13:    13      0 7.289e-05      TRUE        TRUE   TRUE
+14:    14      1 1.027e-03     FALSE        TRUE   TRUE
+15:    15      1 9.673e-04     FALSE        TRUE   TRUE
+16:    16      1 9.871e-04     FALSE        TRUE   TRUE
+17:    17      0 2.781e-04      TRUE        TRUE   TRUE
+18:    18      1 3.238e-04     FALSE        TRUE   TRUE
+19:    19      0 7.900e-05      TRUE        TRUE   TRUE
+20:    20      1 7.034e-04     FALSE        TRUE   TRUE
+21:    21      0 3.174e-04      TRUE        TRUE   TRUE
+22:    22      0 4.393e-04      TRUE        TRUE   TRUE
+23:    23      0 6.825e-04      TRUE        TRUE   TRUE
+24:    24      1 4.095e-04     FALSE        TRUE   TRUE
+25:    25      1 1.373e-03     FALSE        TRUE   TRUE
+26:    26      0 2.404e-04      TRUE        TRUE   TRUE
+27:    27      1 5.029e-05     FALSE        TRUE   TRUE
+28:    28      0 6.205e-04      TRUE        TRUE   TRUE
+29:    29      0 9.010e-05      TRUE        TRUE   TRUE
+30:    30      1 2.580e-03     FALSE       FALSE   TRUE
+31:    31      1 5.571e-04     FALSE        TRUE   TRUE
+32:    32      0 1.562e-04      TRUE        TRUE   TRUE
+33:    33      1 2.034e-03     FALSE       FALSE   TRUE
+34:    34      1 2.731e-03     FALSE       FALSE   TRUE
+35:    35      1 7.529e-04     FALSE        TRUE   TRUE
+36:    36      0 7.289e-05      TRUE        TRUE   TRUE
+37:    37      1 1.154e-03     FALSE        TRUE   TRUE
+38:    38      0 1.563e-04      TRUE        TRUE   TRUE
+39:    39      1 8.710e-04     FALSE        TRUE   TRUE
+40:    40      1 5.371e-04     FALSE        TRUE   TRUE
+     draw n_msgs      grad lme4_pass newton_pass   opt0
+
+lme4 criterion (zero conv messages)  passed: 15/40
+Newton criterion (scaled_grad<=0.002) passed: 37/40
+joint gate (both + opt_code==0)      passed: 15/40
+hard errors: 0/40
+
+message texts seen:
+                                                                               msgs
+                                                                             <char>
+ 1: Model failed to converge with max|grad| = 0.00393099 (tol = 0.002, component 1)
+ 2: Model failed to converge with max|grad| = 0.00293117 (tol = 0.002, component 1)
+ 3: Model failed to converge with max|grad| = 0.00833234 (tol = 0.002, component 1)
+ 4: Model failed to converge with max|grad| = 0.00673684 (tol = 0.002, component 1)
+ 5: Model failed to converge with max|grad| = 0.00415769 (tol = 0.002, component 1)
+ 6: Model failed to converge with max|grad| = 0.00858129 (tol = 0.002, component 1)
+ 7: Model failed to converge with max|grad| = 0.00421399 (tol = 0.002, component 1)
+ 8:  Model failed to converge with max|grad| = 0.0151167 (tol = 0.002, component 1)
+ 9: Model failed to converge with max|grad| = 0.00573893 (tol = 0.002, component 1)
+10: Model failed to converge with max|grad| = 0.00236699 (tol = 0.002, component 1)
+11: Model failed to converge with max|grad| = 0.00209194 (tol = 0.002, component 1)
+12: Model failed to converge with max|grad| = 0.00710855 (tol = 0.002, component 1)
+13:  Model failed to converge with max|grad| = 0.0024826 (tol = 0.002, component 1)
+14:  Model failed to converge with max|grad| = 0.0022273 (tol = 0.002, component 1)
+15:  Model failed to converge with max|grad| = 0.0037229 (tol = 0.002, component 1)
+16: Model failed to converge with max|grad| = 0.00311163 (tol = 0.002, component 1)
+17:  Model failed to converge with max|grad| = 0.0381865 (tol = 0.002, component 1)
+18:  Model failed to converge with max|grad| = 0.0112349 (tol = 0.002, component 1)
+19: Model failed to converge with max|grad| = 0.00460228 (tol = 0.002, component 1)
+20:  Model failed to converge with max|grad| = 0.0174952 (tol = 0.002, component 1)
+21: Model failed to converge with max|grad| = 0.00790678 (tol = 0.002, component 1)
+22: Model failed to converge with max|grad| = 0.00349865 (tol = 0.002, component 1)
+23: Model failed to converge with max|grad| = 0.00370087 (tol = 0.002, component 1)
+24: Model failed to converge with max|grad| = 0.00652192 (tol = 0.002, component 1)
+25: Model failed to converge with max|grad| = 0.00238746 (tol = 0.002, component 1)
+                                                                               msgs
+        N
+    <int>
+ 1:     1
+ 2:     1
+ 3:     1
+ 4:     1
+ 5:     1
+ 6:     1
+ 7:     1
+ 8:     1
+ 9:     1
+10:     1
+11:     1
+12:     1
+13:     1
+14:     1
+15:     1
+16:     1
+17:     1
+18:     1
+19:     1
+20:     1
+21:     1
+22:     1
+23:     1
+24:     1
+25:     1
+        N
+
+sessionInfo:
+R version 4.3.3 (2024-02-29)
+Platform: aarch64-apple-darwin20.0.0 (64-bit)
+Running under: macOS 26.4.1
+
+Matrix products: default
+BLAS/LAPACK: /Users/wolpfor/miniconda3/envs/stats/lib/libopenblas.0.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: Asia/Shanghai
+tzcode source: system (macOS)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] lme4_1.1-37       Matrix_1.6-5      data.table_1.17.8
+
+loaded via a namespace (and not attached):
+ [1] minqa_1.2.8      MASS_7.3-60.0.1  compiler_4.3.3   reformulas_0.4.1
+ [5] tools_4.3.3      Rcpp_1.1.0       splines_4.3.3    nlme_3.1-168    
+ [9] grid_4.3.3       rbibutils_2.3    nloptr_2.2.1     boot_1.3-32     
+[13] Rdpack_2.6.4     lattice_0.22-7  

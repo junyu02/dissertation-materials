@@ -1,0 +1,19 @@
+## month×arm follow rate
+llm-reasoning: M1 40/53=0.755 | M2 33/49=0.673 | M3 33/44=0.750 | M4 28/33=0.848 | M5 27/29=0.931
+llm-control: M1 30/49=0.612 | M2 28/40=0.700 | M3 29/38=0.763 | M4 21/29=0.724 | M5 16/23=0.696
+## direction-standardised arm gap
+raw gap = 0.7740-0.6927 = 0.0813
+pooled weights follow=0.7287 stepback=0.2713
+standardised: reasoning 0.7719, control 0.6932, gap 0.0787
+## within-arm correlations (r, n)
+llm-reasoning: U r=+0.394(n=17) | R r=+0.217(n=17) | TR r=+0.259(n=17) | SP r=+0.231(n=17) | MC1 r=+0.375(n=17)
+llm-control: U r=+0.317(n=18) | R r=+0.580(n=18) | TR r=+0.374(n=18) | SP r=+0.528(n=18) | MC1 r=+0.366(n=18)
+## per-arm cells per participant
+llm-reasoning: total=208 median=13.0 range=[2,17]
+llm-control: total=179 median=11.0 range=[1,15]
+decision-bearing share of scheduled rounds: 387/720 = 0.537
+## MDE / successor arithmetic
+post-hoc MDE = (1.6449+0.8416)*0.432 = 1.0742 log-odds -> OR 2.928
+realised 90% half-width = 0.7106 log-odds (OR factor 2.035)
+halve half-width -> 4x participants ~= 144
+target half-width 0.30 -> SE 0.1824 -> (0.432/0.1824)^2 = 5.61x -> N ~= 202
