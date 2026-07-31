@@ -65,7 +65,7 @@ control `[0.553, 0.764]`, reasoning `[0.645, 0.831]`.
 **Claim.** Every interval that adjusts for participant clustering contains OR = 1.
 
 **Data.** Five **locked values** taken from the figure specification — the GLMM,
-Firth and CR1 fits live in the confirmatory pipeline and are not refitted here.
+Firth and CR1 fits live in the registered primary pipeline and are not refitted here.
 They are written as an explicit constant table at the top of the script with the
 source noted in the header comment. The descriptive twin of row 1 that *is*
 reproducible from the exploratory family is `+0.081 [-0.043, 0.202]`

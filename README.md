@@ -5,18 +5,21 @@ Reasoning and Following Behaviour in AI Financial Advice: A Controlled
 Estimation Study* (Junyu Wei, UCL Interaction Centre, University College
 London, 2026).
 
-- **Experimental platform (source code):** https://github.com/junyu02/SocialTradingChatbot
-- **Preregistration:** https://aspredicted.org/py622u.pdf
+- **Experimental platform:** the platform source repository is private and
+  not part of this public release
+- **Registered analysis plan:** https://aspredicted.org/py622u.pdf (filed
+  after approximately nine completions and before any outcome analysis or
+  condition-level inspection)
 
 The study compared two arms of an LLM financial advisor — `llm-reasoning`
 (advice plus an expandable reasoning block) and `llm-control` (identical
 advice, no reasoning block) — on whether participants followed the advisor's
-recommendation. The confirmatory analysis is a mixed-effects logistic
+recommendation. The registered primary analysis is a mixed-effects logistic
 regression over decision cells nested within participants.
 
 ## Repository history
 
-This repository has two commits, and the split is deliberate.
+This repository has three commits, and the split is deliberate.
 
 The **first commit** (`4b177e4`, dated 2026-07-15) is the registration-frozen
 analysis pipeline, imported byte-identical from commit
@@ -30,8 +33,12 @@ It carries eight of the nine files in that frozen tree. The ninth,
 archive reads; it is withheld because it contains two platform-format
 participant codes whose provenance could not be positively established.
 
-The **second commit** is the final state: the post-window analysis, the
-exploratory family, the de-identified data, and the figure programs.
+The **second commit** is the final state of the analysis: the post-window
+analysis, the exploratory family, the de-identified data, and the figure
+programs.
+
+The **third commit** (`6d28536`) adds the frozen stimulus library
+(`stimuli/`) and changes no analysis code or released analysis data.
 
 So every change made to the analysis after the registration freeze is visible
 in this repository's own history:
@@ -43,8 +50,8 @@ git diff 4b177e4..master -- analysis/
 ## Package structure
 
 ```
-analysis/      Confirmatory pipeline (preregistered) and its integrity checks
-exploratory/   Preregistered exploratory family: code, derived tables, results
+analysis/      Registered primary pipeline and its integrity checks
+exploratory/   Registered exploratory family: code, derived tables, results
 posthoc/       Post-hoc robustness recomputation (optimiser sweep, bootstrap)
 data/          De-identified analysis datasets and the LaTeX value macros
 figures/       Figure programs for the seven result figures
@@ -59,9 +66,9 @@ LICENSE        MIT (code) + CC BY 4.0 (data)
 | File | Role |
 |---|---|
 | `prepare_cells.R` | Step 1: joins pre-task questionnaire covariates (financial literacy, HCI background) onto the behavioural decision cells. |
-| `fit_glmm.R` | Step 2: fits the confirmatory mixed-effects logistic model and emits the LaTeX value macros. |
+| `fit_glmm.R` | Step 2: fits the registered primary mixed-effects logistic model and emits the LaTeX value macros. |
 | `test_alarms.R` | Fail-loud integrity checks on the step-2 alarm conditions. |
-| `apply_screening.R` | Applies the preregistered attention/straight-lining screen; emits `screening_log.csv`. |
+| `apply_screening.R` | Applies the registered straight-lining rule; its numeric threshold was operationalised after the unscreened result had been inspected. Emits `screening_log.csv`. |
 | `identify_disconnect_cells.R` | Post-window check for cells where a participant accepted a recommendation but disconnected before the capital move completed. |
 | `apriori_precision_reconstruction.R` | Reconstructs the a-priori precision (CI half-width) expectation; self-contained, no data inputs. |
 | `gender_sensitivity_20260730.R` | Post-hoc sensitivity adding participant gender to the registered covariate set. |
@@ -71,7 +78,7 @@ LICENSE        MIT (code) + CC BY 4.0 (data)
 
 ### `exploratory/`
 
-`explore_family.R` computes the preregistered exploratory family;
+`explore_family.R` computes the registered exploratory family;
 `verify_explore_family.R` independently re-derives its numbers.
 `results-exploratory.md` is the reported output. The four CSVs are the derived
 tables the figure programs and `p2-computations` consume:
@@ -85,7 +92,7 @@ tables the figure programs and `p2-computations` consume:
 
 ### `posthoc/`
 
-`recheck_allfit.R` refits the confirmatory model across every available
+`recheck_allfit.R` refits the registered primary model across every available
 optimiser to confirm the estimate is not optimiser-dependent;
 `recheck_allfit_stdout.txt` is its captured output.
 `recheck_task3_variants.R` refits model variants.
@@ -97,7 +104,7 @@ participant-cluster bootstrap helpers (fixed seed, sourced by the callers).
 | File | Rows | Participants | Contents |
 |---|---|---|---|
 | `study_cells.csv` | 411 | 38 | Decision cells before screening |
-| `study_cells_screened.csv` | 387 | 36 | Decision cells after the preregistered screen |
+| `study_cells_screened.csv` | 387 | 36 | Decision cells after the reported all-identical-response screen |
 | `merged_cells.csv` | 411 | 38 | As above, plus questionnaire covariates |
 | `merged_cells_screened.csv` | 387 | 36 | **Primary analysis dataset** |
 | `screening_log.csv` | 40 | 40 | Per-participant screening decision and its inputs |
@@ -151,7 +158,7 @@ export. Concretely:
 
 **Reproducible from this package:**
 
-- the confirmatory model and its LaTeX value macros —
+- the registered primary model and its LaTeX value macros —
   `Rscript analysis/fit_glmm.R data/merged_cells_screened.csv out.tex`
 - the same model on the bundled synthetic dataset, with no arguments —
   `Rscript analysis/fit_glmm.R` defaults to `data/synth_cells.csv`, so the
