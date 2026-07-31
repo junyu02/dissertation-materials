@@ -48,6 +48,9 @@ exploratory/   Preregistered exploratory family: code, derived tables, results
 posthoc/       Post-hoc robustness recomputation (optimiser sweep, bootstrap)
 data/          De-identified analysis datasets and the LaTeX value macros
 figures/       Figure programs for the seven result figures
+stimuli/       The frozen advice library (20 rows): recommendation
+               conclusions, primary reasoning bodies, and their
+               direction-specific variants, as deployed
 LICENSE        MIT (code) + CC BY 4.0 (data)
 ```
 
