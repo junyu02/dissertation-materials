@@ -19,7 +19,7 @@ rows <- data.table(
              "Post-hoc sensitivity",
              "Cluster-bootstrap Firth",
              "CR1 cluster-robust, pooled",
-             "Registered fallback (strict-screen N = 36)",
+             "Registered fallback (all-identical-response N = 36)",
              "Firth, collapsed"),
   or = c(NA, 1.68, NA, 1.68, NA, 1.51, 1.53, NA, 1.51),
   lo = c(NA, 0.83, NA, 0.82, NA, 0.82, 0.82, NA, 1.02),
