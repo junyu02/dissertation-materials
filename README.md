@@ -19,7 +19,9 @@ regression over decision cells nested within participants.
 
 ## Repository history
 
-This repository has three commits, and the split is deliberate.
+The released material arrived in three commits, and the split is
+deliberate. Any later commit touches only this documentation, never the
+analysis code or the released data.
 
 The **first commit** (`4b177e4`, dated 2026-07-15) is the registration-frozen
 analysis pipeline, imported byte-identical from commit
