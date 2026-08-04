@@ -65,7 +65,7 @@ pR <- ggplot(dif, aes(tier, est)) +
   geom_point(size = 2.4, colour = C_REASON) +
   scale_y_continuous(labels = function(x) sprintf("%+.0f", 100 * x),
                      limits = c(-0.15, 0.36), breaks = seq(-0.1, 0.3, .1)) +
-  labs(x = NULL, y = "Arm difference, reasoning - control (pp, 90% CI)", tag = "B") +
+  labs(x = NULL, y = "Condition difference, reasoning - control (pp, 90% CI)", tag = "B") +
   theme_fig() +
   theme(axis.title.y = element_text(size = 8), plot.margin = margin(4, 6, 4, 4),
         legend.position = "top", legend.text = element_text(colour = "white"),

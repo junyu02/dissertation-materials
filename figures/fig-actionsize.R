@@ -45,7 +45,7 @@ p <- ggplot(mv, aes(xarm, invested, colour = condition, fill = condition)) +
                 labels = function(x) paste0("\u00a3", comma(x)),
                 limits = c(6, 5200), expand = c(0, 0)) +
   labs(x = NULL, y = "Size of the capital move (log scale)",
-       caption = paste("Diamond: arm mean. Box: median and IQR. Open circles:",
+       caption = paste("Diamond: condition mean. Box: median and IQR. Open circles:",
                        "participant means.\nDenominator: every executed capital move",
                        "with amount > \u00a30, including adopted step-back moves.")) +
   theme_fig() +

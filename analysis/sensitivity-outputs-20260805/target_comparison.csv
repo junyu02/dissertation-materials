@@ -1,0 +1,15 @@
+item,observed,target,matched
+S1a OR,1.48,1.48,TRUE
+S1b OR,1.5,1.5,TRUE
+S2 reasoning mean,74.2,74.2,TRUE
+S2 control mean,66.5,66.5,TRUE
+S2 difference,7.7,7.7,TRUE
+S2 CI low,-7,-7,TRUE
+S2 CI high,22.4,22.4,TRUE
+S2 p,0.382,0.382,TRUE
+S3 reasoning mean,75.7,75.7,TRUE
+S3 control mean,67.6,67.6,TRUE
+S3 difference,8.1,8.1,TRUE
+S3 CI low,-8,-8,TRUE
+S3 CI high,24.1,24.1,TRUE
+S3 p,0.401,0.401,TRUE

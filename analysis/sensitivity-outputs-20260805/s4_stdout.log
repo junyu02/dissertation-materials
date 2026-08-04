@@ -1,0 +1,8 @@
+[S4 summary]
+   registered_n reasoning_n complete_pairs display_before_terminal_n
+          <int>       <int>          <int>                     <int>
+1:           36          18             18                        18
+   min_lead_seconds max_lead_seconds median_lead_seconds
+              <num>            <num>               <num>
+1:         7.881179         192.1334            30.77068
+[S4 status] PASS

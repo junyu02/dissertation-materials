@@ -45,7 +45,7 @@ p <- ggplot(cas, aes(xarm, cas, colour = condition, fill = condition)) +
   scale_y_continuous(labels = percent_format(accuracy = 1), limits = c(0, 1.02),
                      breaks = seq(0, 1, .25), expand = c(0, 0)) +
   labs(x = NULL, y = "Capital allocation share on the cell",
-       caption = paste("Diamond: arm mean. Box: median and IQR. Open circles:",
+       caption = paste("Diamond: condition mean. Box: median and IQR. Open circles:",
                        "participant means.\nCAS is defined only on cells adopted in the follow direction.")) +
   theme_fig() +
   theme(legend.position = "none",

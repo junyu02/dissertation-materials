@@ -1,0 +1,14 @@
+assertion,observed,expected,passed
+required columns,"",none missing,TRUE
+participant N,36,36,TRUE
+decision cells,387,387,TRUE
+condition levels,"llm-control,llm-reasoning","llm-control,llm-reasoning",TRUE
+participants per condition,"18,18","18,18",TRUE
+reasoning cells/follows,161/208,161/208,TRUE
+control cells/follows,124/179,124/179,TRUE
+participant mean reasoning,0.7416518667,round4=0.7417,TRUE
+participant mean control,0.6648114231,round4=0.6648,TRUE
+public cells SHA-256,934ad28634a1f379a5cf269d2a333efcd5089c50b3c9195fec8e8250539a7c8f,934ad28634a1f379a5cf269d2a333efcd5089c50b3c9195fec8e8250539a7c8f,TRUE
+S3 participants retained,36,36,TRUE
+S3 positive denominator,1,>0,TRUE
+S3 conditions retained,"18,18","18,18",TRUE

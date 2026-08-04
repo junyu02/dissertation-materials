@@ -19,11 +19,22 @@ regression over decision cells nested within participants.
 
 ## Repository history
 
-The released material arrived in three commits, and the split is
-deliberate. Later commits are limited to documentation and to one
-in-figure label wording fix (`figures/fig-forest.R`); the analysis
-models, the pipelines, and the released data are unchanged, and the
-repository's own history shows every such change.
+The released material arrived in three content commits, and the split is
+deliberate. Changes after those three, each dated in the log, are:
+documentation edits; in-figure label wording fixes aligning figure text
+with the manuscript's terminology (`figures/fig-forest.R`, 2026-08-01;
+`fig-actionsize.R`, `fig-cas.R`, and `fig-complexity.R`, 2026-08-05); and
+one added script with its committed outputs,
+`analysis/sensitivity_enrico_20260805.R` (2026-08-05), which runs
+post-registration sensitivity checks requested at supervision — a
+condition-only clustered model, a participant-level comparison, and
+first-month-exclusion refits — reading only data already in this release.
+Its committed output folder also carries the de-identified
+delivery-timing summary (`s4_*.csv`) quoted in the thesis; the raw event
+logs and the extraction script behind those two files are not part of
+this release.
+The registered analysis models, the pipelines, and the previously released
+data are unchanged, and the repository's own history shows every change.
 
 The **first commit** (`4b177e4`, dated 2026-07-15) is the registration-frozen
 analysis pipeline, imported byte-identical from commit

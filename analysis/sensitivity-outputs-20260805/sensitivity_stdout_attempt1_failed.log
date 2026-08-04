@@ -1,0 +1,7 @@
+Warning message:
+In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  Model failed to converge with max|grad| = 0.00525494 (tol = 0.002, component 1)
+Error in `[.data.table`(participant_rates, , .(n_participants = .N, mean_follow_ratio = mean(follow_ratio),  : 
+  The items in the 'by' or 'keyby' list have lengths [1, 36]. Each must be length 36; the same length as there are rows in x (after subsetting if i is provided).
+Calls: rbindlist ... [ -> [.data.table -> stopf -> raise_condition -> signal
+Execution halted

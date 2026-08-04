@@ -1,0 +1,119 @@
+Warning message:
+In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  Model failed to converge with max|grad| = 0.00525494 (tol = 0.002, component 1)
+[data gates]
+                     assertion
+                        <char>
+ 1:           required columns
+ 2:              participant N
+ 3:             decision cells
+ 4:           condition levels
+ 5: participants per condition
+ 6:    reasoning cells/follows
+ 7:      control cells/follows
+ 8: participant mean reasoning
+ 9:   participant mean control
+10:       public cells SHA-256
+11:   S3 participants retained
+12:    S3 positive denominator
+13:     S3 conditions retained
+                                                            observed
+                                                              <char>
+ 1:                                                                 
+ 2:                                                               36
+ 3:                                                              387
+ 4:                                        llm-control,llm-reasoning
+ 5:                                                            18,18
+ 6:                                                          161/208
+ 7:                                                          124/179
+ 8:                                                     0.7416518667
+ 9:                                                     0.6648114231
+10: 934ad28634a1f379a5cf269d2a333efcd5089c50b3c9195fec8e8250539a7c8f
+11:                                                               36
+12:                                                                1
+13:                                                            18,18
+                                                            expected passed
+                                                              <char> <lgcl>
+ 1:                                                     none missing   TRUE
+ 2:                                                               36   TRUE
+ 3:                                                              387   TRUE
+ 4:                                        llm-control,llm-reasoning   TRUE
+ 5:                                                            18,18   TRUE
+ 6:                                                          161/208   TRUE
+ 7:                                                          124/179   TRUE
+ 8:                                                    round4=0.7417   TRUE
+ 9:                                                    round4=0.6648   TRUE
+10: 934ad28634a1f379a5cf269d2a333efcd5089c50b3c9195fec8e8250539a7c8f   TRUE
+11:                                                               36   TRUE
+12:                                                               >0   TRUE
+13:                                                            18,18   TRUE
+
+[results: unrounded and rounded]
+   analysis                 scale
+     <char>                <char>
+1:      S1a            odds ratio
+2:      S1b            odds ratio
+3:      S1c            odds ratio
+4:       S2 proportion difference
+5:       S3 proportion difference
+6:      S3b            odds ratio
+                                                                                             model
+                                                                                            <char>
+1:                                                                                      ~condition
+2:                                  ~condition + literacy + is_HCI + factor(month) + factor(round)
+3:                                                     followed ~ condition + (1 | participant_id)
+4:                                                                     equal-variance two-sample t
+5:                                                                     equal-variance two-sample t
+6: followed ~ condition + literacy + is_HCI + factor(month) + factor(round) + (1 | participant_id)
+     estimate      ci_low   ci_high   p_value standard_error_log       tau
+        <num>       <num>     <num>     <num>              <num>     <num>
+1: 1.48399719  0.76869230 2.8649274 0.3236158          0.3999163        NA
+2: 1.49622734  0.76849346 2.9130973 0.3198459          0.4050634        NA
+3: 1.68485656  0.80314211 3.5345446 0.2467974          0.4504377 1.0620896
+4: 0.07684044 -0.06994334 0.2236242 0.3822724                 NA        NA
+5: 0.08071250 -0.07975592 0.2411809 0.4009960                 NA        NA
+6: 1.54424984  0.71004054 3.3585513 0.3576144          0.4723651 0.9378989
+   working_alpha n_participants n_cells    df converged
+           <num>          <int>   <int> <num>    <lgcl>
+1:     0.1596688             36     387    NA      TRUE
+2:     0.1225844             36     387    NA      TRUE
+3:            NA             36     387    NA      TRUE
+4:            NA             36     387    34      TRUE
+5:            NA             36     285    34      TRUE
+6:            NA             36     285    NA     FALSE
+                                                                                                                                   convergence_detail
+                                                                                                                                               <char>
+1:                                                                                                             GEE iterations=6; MD robust covariance
+2:                                                                                                            GEE iterations=10; MD robust covariance
+3:                                                                                  scaled_grad=1.34403874577e-05 | optimizer_code=0 | singular=FALSE
+4:                                                                                                                                     not applicable
+5:                                                                                                                                     not applicable
+6: scaled_grad=0.00200258740771 | optimizer_code=0 | singular=FALSE | Model failed to converge with max|grad| = 0.00525494 (tol = 0.002, component 1)
+   estimate_rounded      ci_rounded p_rounded interval_includes_null
+             <char>          <char>    <char>                 <lgcl>
+1:             1.48    [0.77, 2.86]     0.324                   TRUE
+2:             1.50    [0.77, 2.91]     0.320                   TRUE
+3:             1.68    [0.80, 3.53]     0.247                   TRUE
+4:           7.7 pp [-7.0, 22.4] pp     0.382                   TRUE
+5:           8.1 pp [-8.0, 24.1] pp     0.401                   TRUE
+6:             1.54    [0.71, 3.36]     0.358                   TRUE
+
+[target comparison]
+                 item observed target matched
+               <char>    <num>  <num>  <lgcl>
+ 1:            S1a OR    1.480  1.480    TRUE
+ 2:            S1b OR    1.500  1.500    TRUE
+ 3: S2 reasoning mean   74.200 74.200    TRUE
+ 4:   S2 control mean   66.500 66.500    TRUE
+ 5:     S2 difference    7.700  7.700    TRUE
+ 6:         S2 CI low   -7.000 -7.000    TRUE
+ 7:        S2 CI high   22.400 22.400    TRUE
+ 8:              S2 p    0.382  0.382    TRUE
+ 9: S3 reasoning mean   75.700 75.700    TRUE
+10:   S3 control mean   67.600 67.600    TRUE
+11:     S3 difference    8.100  8.100    TRUE
+12:         S3 CI low   -8.000 -8.000    TRUE
+13:        S3 CI high   24.100 24.100    TRUE
+14:              S3 p    0.401  0.401    TRUE
+
+[status] PASS

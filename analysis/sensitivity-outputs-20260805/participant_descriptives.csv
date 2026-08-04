@@ -1,0 +1,5 @@
+analysis,condition,n_participants,mean_follow_ratio,sd_follow_ratio,min_cells,max_cells
+S2,llm-reasoning,18,0.741651866651867,0.24724627850237,2,17
+S2,llm-control,18,0.664811423144757,0.272959622941873,1,15
+S3,llm-reasoning,18,0.756523569023569,0.24450793963898,2,13
+S3,llm-control,18,0.675811071644405,0.319880376755527,1,13

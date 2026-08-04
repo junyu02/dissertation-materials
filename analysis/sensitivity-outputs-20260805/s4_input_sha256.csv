@@ -1,0 +1,5 @@
+source,file,sha256
+reasoning_events,/Users/wolpfor/Desktop/UCL毕业项目/00-论文交付/分析管道/data/real-20260727/raw/ReasoningEvent.csv,e5a10644cda1066f4a8fd03ada176e3c848f603e9b08d28c8701b4e4d1d584a2
+user_actions,/Users/wolpfor/Desktop/UCL毕业项目/00-论文交付/分析管道/data/real-20260727/raw/UserAction.csv,40af53f7104d8899e17b1e1385945cfc164a6374e7fd037fc45415b2ba56d469
+participants,/Users/wolpfor/Desktop/UCL毕业项目/00-论文交付/分析管道/data/real-20260727/raw/Participant.csv,19b310af0c69ff18d3bca648341bc2fb95e08b43a0fc130ac0c9b3411b10283f
+screening,/Users/wolpfor/Desktop/UCL毕业项目/00-论文交付/分析管道/data/real-20260727/screening_log.csv,8fc1277a9123ce781b6fada30ad23665639cb47ca7f578965a67549442de688c
