@@ -1,0 +1,4 @@
+[gate] participants=36 cells=387 conditions=18:18 sha256=6397721d0ae7af5f93044b905f71373b5c06bd2d2389e53ae0ff3a6f6ddb00c8
+[LOPO] OR range 1.4118421053--1.9861820628; intervals excluding 1: 1/36
+[LOPO] default warning refits=25; bobyqa warning refits=0; max |delta log(OR)|=0.002293798444
+[status] PASS: all three manuscript claims reproduced

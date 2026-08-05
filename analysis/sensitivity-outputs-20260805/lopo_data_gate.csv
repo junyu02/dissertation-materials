@@ -1,0 +1,10 @@
+check,observed,target,pass
+input_not_synthetic,TRUE,TRUE,TRUE
+participants,36,36,TRUE
+cells,387,387,TRUE
+control_participants,18,18,TRUE
+reasoning_participants,18,18,TRUE
+control_followed_cells,124/179,124/179,TRUE
+reasoning_followed_cells,161/208,161/208,TRUE
+control_mean_ratio_4dp,0.6648,0.6648,TRUE
+reasoning_mean_ratio_4dp,0.7417,0.7417,TRUE

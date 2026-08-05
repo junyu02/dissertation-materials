@@ -24,11 +24,15 @@ deliberate. Changes after those three, each dated in the log, are:
 documentation edits; in-figure label wording fixes aligning figure text
 with the manuscript's terminology (`figures/fig-forest.R`, 2026-08-01;
 `fig-actionsize.R`, `fig-cas.R`, and `fig-complexity.R`, 2026-08-05); and
-one added script with its committed outputs,
-`analysis/sensitivity_enrico_20260805.R` (2026-08-05), which runs
-post-registration sensitivity checks requested at supervision — a
-condition-only clustered model, a participant-level comparison, and
-first-month-exclusion refits — reading only data already in this release.
+three added scripts with their committed outputs (all 2026-08-05, each
+reading only data already in this release):
+`analysis/sensitivity_enrico_20260805.R`, which runs post-registration
+sensitivity checks requested at supervision — a condition-only clustered
+model, a participant-level comparison, and first-month-exclusion refits;
+`analysis/lopo_diagnostic_20260805.R`, a post-hoc leave-one-participant-out
+stability diagnostic reproducing the diagnostic quoted in the thesis; and
+`analysis/welch_bootstrap_check_20260805.R`, which archives the Welch and
+participant-bootstrap robustness status of the participant-level checks.
 Its committed output folder also carries the de-identified
 delivery-timing summary (`s4_*.csv`) quoted in the thesis; the raw event
 logs and the extraction script behind those two files are not part of

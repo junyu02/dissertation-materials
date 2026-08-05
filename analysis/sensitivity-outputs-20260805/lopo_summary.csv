@@ -1,0 +1,2 @@
+min_or,max_or,intervals_excluding_1,default_warning_refits,bobyqa_warning_refits,max_abs_log_or_difference,claim_or_range,claim_one_interval,claim_optimizer,all_claims_reproduced
+1.41184210530512,1.9861820628279,1,25,0,0.00229379844367683,TRUE,TRUE,TRUE,TRUE
